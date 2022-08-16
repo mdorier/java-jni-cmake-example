@@ -20,7 +20,7 @@ add_jar (HelloWorldJNI
          GENERATE_NATIVE_HEADERS HelloWorldJNI-native
          SOURCES src/java/com/mdorier/jni/HelloWorldJNI.java)
 
-add_library (HelloWorldJNI-cpp
+ add_library (HelloWorldJNI-cpp SHARED
              src/cpp/HelloWorldJNI-cpp.cpp)
 target_include_directories (HelloWorldJNI-cpp PRIVATE ${JNI_INCLUDE_DIRS})
 target_link_libraries (HelloWorldJNI-cpp PRIVATE HelloWorldJNI-native ${JNI_LIBRARIES})

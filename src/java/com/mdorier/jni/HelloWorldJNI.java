@@ -3,7 +3,7 @@ package com.mdorier.jni;
 public class HelloWorldJNI {
 
     static {
-        System.loadLibrary("native");
+        System.loadLibrary("HelloWorldJNI-cpp");
     }
 
     public static void main(String[] args) {
