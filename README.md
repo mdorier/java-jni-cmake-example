@@ -35,3 +35,6 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd` java -jar HelloWorldJNI.jar
 
 The `LD_LIBRARY_PATH` needs to point to the location of the
 C++ `libHelloWorldJNI-cpp.so` that CMake has built.
+
+For more information on how to write a JNI-based native library,
+a good tutorial is [here](https://www.baeldung.com/jni).
